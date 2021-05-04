@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="QuizTableViewCell" customModule="Go_Quiz_Yourself" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0B-X1-CJa">
+                        <rect key="frame" x="236" y="22.5" width="68" height="35"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="GUf-ex-L6S"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="Set Up">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="setUpButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zPu-6u-Gvf"/>
+                        </connections>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLc-7o-lKS">
+                        <rect key="frame" x="229" y="22.5" width="75" height="35"/>
+                        <color key="backgroundColor" red="0.99739974740000004" green="0.29170895605068486" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="Kve-lg-0mJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="Stop Quiz">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="stopButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6fM-sJ-W3w"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K20-fR-WQv">
+                        <rect key="frame" x="16" y="13" width="150" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="TdR-Rx-lcW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Question ➤" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bk3-cC-rJm">
+                        <rect key="frame" x="202.5" y="32" width="101.5" height="16"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cLc-7o-lKS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22.5" id="1P7-S7-4Uv"/>
+                    <constraint firstAttribute="bottom" secondItem="W0B-X1-CJa" secondAttribute="bottom" constant="22.5" id="DZP-R8-0zC"/>
+                    <constraint firstAttribute="bottom" secondItem="bk3-cC-rJm" secondAttribute="bottom" constant="32" id="Evz-UK-0Wr"/>
+                    <constraint firstItem="bk3-cC-rJm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="32" id="Owl-Ah-irl"/>
+                    <constraint firstAttribute="trailing" secondItem="cLc-7o-lKS" secondAttribute="trailing" constant="16" id="W2V-TX-k8t"/>
+                    <constraint firstItem="K20-fR-WQv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="bgV-xR-omv"/>
+                    <constraint firstAttribute="trailing" secondItem="W0B-X1-CJa" secondAttribute="trailing" constant="16" id="egm-Np-TuU"/>
+                    <constraint firstItem="K20-fR-WQv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="ih2-Aq-8vZ"/>
+                    <constraint firstItem="W0B-X1-CJa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22.5" id="jTP-aG-cDV"/>
+                    <constraint firstAttribute="bottom" secondItem="K20-fR-WQv" secondAttribute="bottom" constant="13" id="pzt-tj-3jN"/>
+                    <constraint firstAttribute="bottom" secondItem="cLc-7o-lKS" secondAttribute="bottom" constant="22.5" id="qe0-KE-2ew"/>
+                    <constraint firstAttribute="trailing" secondItem="bk3-cC-rJm" secondAttribute="trailing" constant="16" id="wOd-HO-LSN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addQuestionLabel" destination="bk3-cC-rJm" id="tvM-D4-We6"/>
+                <outlet property="quizTitle" destination="K20-fR-WQv" id="F6J-zZ-3sr"/>
+                <outlet property="setUpButton" destination="W0B-X1-CJa" id="8Kx-UC-yxs"/>
+                <outlet property="stopButton" destination="cLc-7o-lKS" id="PR3-vZ-tQY"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="107.14285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

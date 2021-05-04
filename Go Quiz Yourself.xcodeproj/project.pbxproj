@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03B9D239DB5D0CF83E62B0E3 /* Pods_Go_Quiz_Yourself.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211DA613A04AC8C2125C5137 /* Pods_Go_Quiz_Yourself.framework */; };
+		0712AC642635F7170076E499 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0712AC622635F7170076E499 /* QuestionTableViewCell.swift */; };
+		0712AC652635F7170076E499 /* QuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0712AC632635F7170076E499 /* QuestionTableViewCell.xib */; };
+		0712AC69263735D20076E499 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0712AC68263735D20076E499 /* LoadingViewController.swift */; };
+		073FA79A25F328C400B32339 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073FA79925F328C400B32339 /* RegisterViewController.swift */; };
+		073FA79D25F3291700B32339 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073FA79C25F3291700B32339 /* LoginViewController.swift */; };
+		073FA7A025F3293100B32339 /* QuizzesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073FA79F25F3293100B32339 /* QuizzesViewController.swift */; };
+		073FA7AC25F421EB00B32339 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 073FA7AB25F421EB00B32339 /* GoogleService-Info.plist */; };
+		073FA7D525F46EEC00B32339 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073FA7D425F46EEC00B32339 /* Constants.swift */; };
+		073FA81F25F8569B00B32339 /* QuizQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073FA81E25F8569900B32339 /* QuizQuestionsViewController.swift */; };
+		0768323125F2A5AB009F081B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0768323025F2A5AB009F081B /* AppDelegate.swift */; };
+		0768323325F2A5AB009F081B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0768323225F2A5AB009F081B /* SceneDelegate.swift */; };
+		0768323525F2A5AB009F081B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0768323425F2A5AB009F081B /* WelcomeViewController.swift */; };
+		0768323825F2A5AB009F081B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0768323625F2A5AB009F081B /* Main.storyboard */; };
+		0768323A25F2A5B0009F081B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0768323925F2A5B0009F081B /* Assets.xcassets */; };
+		0768323D25F2A5B0009F081B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0768323B25F2A5B0009F081B /* LaunchScreen.storyboard */; };
+		07EE0E652603BC3300278CAA /* SetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EE0E642603BC3300278CAA /* SetUpViewController.swift */; };
+		07EE0E6A2605095E00278CAA /* QuizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EE0E682605095D00278CAA /* QuizTableViewCell.swift */; };
+		07EE0E6B2605095E00278CAA /* QuizTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07EE0E692605095D00278CAA /* QuizTableViewCell.xib */; };
+		07EE0E732614063600278CAA /* QuizQuestionNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EE0E722614063500278CAA /* QuizQuestionNotification.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0712AC622635F7170076E499 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
+		0712AC632635F7170076E499 /* QuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionTableViewCell.xib; sourceTree = "<group>"; };
+		0712AC68263735D20076E499 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		073FA79925F328C400B32339 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		073FA79C25F3291700B32339 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		073FA79F25F3293100B32339 /* QuizzesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzesViewController.swift; sourceTree = "<group>"; };
+		073FA7AB25F421EB00B32339 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		073FA7D425F46EEC00B32339 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		073FA81E25F8569900B32339 /* QuizQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionsViewController.swift; sourceTree = "<group>"; };
+		0768322D25F2A5AB009F081B /* Go Quiz Yourself.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go Quiz Yourself.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0768323025F2A5AB009F081B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0768323225F2A5AB009F081B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0768323425F2A5AB009F081B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		0768323725F2A5AB009F081B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0768323925F2A5B0009F081B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0768323C25F2A5B0009F081B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0768323E25F2A5B0009F081B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07EE0E642603BC3300278CAA /* SetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
+		07EE0E682605095D00278CAA /* QuizTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTableViewCell.swift; sourceTree = "<group>"; };
+		07EE0E692605095D00278CAA /* QuizTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizTableViewCell.xib; sourceTree = "<group>"; };
+		07EE0E6F2612A00900278CAA /* Go Quiz Yourself.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Go Quiz Yourself.entitlements"; sourceTree = "<group>"; };
+		07EE0E722614063500278CAA /* QuizQuestionNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionNotification.swift; sourceTree = "<group>"; };
+		211DA613A04AC8C2125C5137 /* Pods_Go_Quiz_Yourself.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Go_Quiz_Yourself.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96597D7A27BFB2D771BE0112 /* Pods-Go Quiz Yourself.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go Quiz Yourself.debug.xcconfig"; path = "Target Support Files/Pods-Go Quiz Yourself/Pods-Go Quiz Yourself.debug.xcconfig"; sourceTree = "<group>"; };
+		C1D4F1E01B97999065021C35 /* Pods-Go Quiz Yourself.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go Quiz Yourself.release.xcconfig"; path = "Target Support Files/Pods-Go Quiz Yourself/Pods-Go Quiz Yourself.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0768322A25F2A5AB009F081B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B9D239DB5D0CF83E62B0E3 /* Pods_Go_Quiz_Yourself.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0768322425F2A5AA009F081B = {
+			isa = PBXGroup;
+			children = (
+				0768322F25F2A5AB009F081B /* Go Quiz Yourself */,
+				0768322E25F2A5AB009F081B /* Products */,
+				1F291084FE6A8BC669C4E9CE /* Pods */,
+				F10E2498A0F5687C8CF75719 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0768322E25F2A5AB009F081B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0768322D25F2A5AB009F081B /* Go Quiz Yourself.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0768322F25F2A5AB009F081B /* Go Quiz Yourself */ = {
+			isa = PBXGroup;
+			children = (
+				07EE0E6F2612A00900278CAA /* Go Quiz Yourself.entitlements */,
+				0768323025F2A5AB009F081B /* AppDelegate.swift */,
+				0768323225F2A5AB009F081B /* SceneDelegate.swift */,
+				0768324A25F31B12009F081B /* Models */,
+				0768324725F31B08009F081B /* Controllers */,
+				0768324525F31AF3009F081B /* Views */,
+				0768323925F2A5B0009F081B /* Assets.xcassets */,
+				0768323B25F2A5B0009F081B /* LaunchScreen.storyboard */,
+				0768323E25F2A5B0009F081B /* Info.plist */,
+				073FA7AB25F421EB00B32339 /* GoogleService-Info.plist */,
+				073FA7D425F46EEC00B32339 /* Constants.swift */,
+				07EE0E682605095D00278CAA /* QuizTableViewCell.swift */,
+				07EE0E692605095D00278CAA /* QuizTableViewCell.xib */,
+				0712AC622635F7170076E499 /* QuestionTableViewCell.swift */,
+				0712AC632635F7170076E499 /* QuestionTableViewCell.xib */,
+			);
+			path = "Go Quiz Yourself";
+			sourceTree = "<group>";
+		};
+		0768324525F31AF3009F081B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0768323625F2A5AB009F081B /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0768324725F31B08009F081B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0768323425F2A5AB009F081B /* WelcomeViewController.swift */,
+				073FA79925F328C400B32339 /* RegisterViewController.swift */,
+				073FA79C25F3291700B32339 /* LoginViewController.swift */,
+				073FA79F25F3293100B32339 /* QuizzesViewController.swift */,
+				073FA81E25F8569900B32339 /* QuizQuestionsViewController.swift */,
+				07EE0E642603BC3300278CAA /* SetUpViewController.swift */,
+				07EE0E722614063500278CAA /* QuizQuestionNotification.swift */,
+				0712AC68263735D20076E499 /* LoadingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0768324A25F31B12009F081B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F291084FE6A8BC669C4E9CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96597D7A27BFB2D771BE0112 /* Pods-Go Quiz Yourself.debug.xcconfig */,
+				C1D4F1E01B97999065021C35 /* Pods-Go Quiz Yourself.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F10E2498A0F5687C8CF75719 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				211DA613A04AC8C2125C5137 /* Pods_Go_Quiz_Yourself.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0768322C25F2A5AB009F081B /* Go Quiz Yourself */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0768324125F2A5B0009F081B /* Build configuration list for PBXNativeTarget "Go Quiz Yourself" */;
+			buildPhases = (
+				3B66E64FE68677B86CE90EFE /* [CP] Check Pods Manifest.lock */,
+				0768322925F2A5AB009F081B /* Sources */,
+				0768322A25F2A5AB009F081B /* Frameworks */,
+				0768322B25F2A5AB009F081B /* Resources */,
+				8069E7BA2F3E8A32D39CE2A9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Go Quiz Yourself";
+			productName = "Go Quiz Yourself";
+			productReference = 0768322D25F2A5AB009F081B /* Go Quiz Yourself.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0768322525F2A5AB009F081B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					0768322C25F2A5AB009F081B = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
+				};
+			};
+			buildConfigurationList = 0768322825F2A5AB009F081B /* Build configuration list for PBXProject "Go Quiz Yourself" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0768322425F2A5AA009F081B;
+			productRefGroup = 0768322E25F2A5AB009F081B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0768322C25F2A5AB009F081B /* Go Quiz Yourself */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0768322B25F2A5AB009F081B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0768323D25F2A5B0009F081B /* LaunchScreen.storyboard in Resources */,
+				073FA7AC25F421EB00B32339 /* GoogleService-Info.plist in Resources */,
+				0768323A25F2A5B0009F081B /* Assets.xcassets in Resources */,
+				0712AC652635F7170076E499 /* QuestionTableViewCell.xib in Resources */,
+				07EE0E6B2605095E00278CAA /* QuizTableViewCell.xib in Resources */,
+				0768323825F2A5AB009F081B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B66E64FE68677B86CE90EFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Go Quiz Yourself-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8069E7BA2F3E8A32D39CE2A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Go Quiz Yourself/Pods-Go Quiz Yourself-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Go Quiz Yourself/Pods-Go Quiz Yourself-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Go Quiz Yourself/Pods-Go Quiz Yourself-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0768322925F2A5AB009F081B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073FA7A025F3293100B32339 /* QuizzesViewController.swift in Sources */,
+				0768323525F2A5AB009F081B /* WelcomeViewController.swift in Sources */,
+				0768323125F2A5AB009F081B /* AppDelegate.swift in Sources */,
+				0768323325F2A5AB009F081B /* SceneDelegate.swift in Sources */,
+				07EE0E652603BC3300278CAA /* SetUpViewController.swift in Sources */,
+				073FA7D525F46EEC00B32339 /* Constants.swift in Sources */,
+				073FA81F25F8569B00B32339 /* QuizQuestionsViewController.swift in Sources */,
+				073FA79D25F3291700B32339 /* LoginViewController.swift in Sources */,
+				07EE0E732614063600278CAA /* QuizQuestionNotification.swift in Sources */,
+				0712AC642635F7170076E499 /* QuestionTableViewCell.swift in Sources */,
+				07EE0E6A2605095E00278CAA /* QuizTableViewCell.swift in Sources */,
+				0712AC69263735D20076E499 /* LoadingViewController.swift in Sources */,
+				073FA79A25F328C400B32339 /* RegisterViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0768323625F2A5AB009F081B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0768323725F2A5AB009F081B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0768323B25F2A5B0009F081B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0768323C25F2A5B0009F081B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0768323F25F2A5B0009F081B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0768324025F2A5B0009F081B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0768324225F2A5B0009F081B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96597D7A27BFB2D771BE0112 /* Pods-Go Quiz Yourself.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Go Quiz Yourself/Go Quiz Yourself.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4C85Q345H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Go Quiz Yourself/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gillianjohnson.Go-Quiz-Yourself";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0768324325F2A5B0009F081B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1D4F1E01B97999065021C35 /* Pods-Go Quiz Yourself.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Go Quiz Yourself/Go Quiz Yourself.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4C85Q345H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Go Quiz Yourself/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gillianjohnson.Go-Quiz-Yourself";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0768322825F2A5AB009F081B /* Build configuration list for PBXProject "Go Quiz Yourself" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0768323F25F2A5B0009F081B /* Debug */,
+				0768324025F2A5B0009F081B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0768324125F2A5B0009F081B /* Build configuration list for PBXNativeTarget "Go Quiz Yourself" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0768324225F2A5B0009F081B /* Debug */,
+				0768324325F2A5B0009F081B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0768322525F2A5AB009F081B /* Project object */;
+}
